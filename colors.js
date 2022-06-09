@@ -1,18 +1,21 @@
 var BodySet = {
   color:function(color){
-    document.querySelector('body').style.color=color;
+    // document.querySelector('body').style.color=color;
+    $('body').css('color', color);
   },
   backgroundColor:function(color){
-    document.querySelector('body').style.backgroundColor=color;
+    // document.querySelector('body').style.backgroundColor=color;
+    $('body').css('backgroundColor', color);
   }
 }
 var LinkSet = {
   color:function(color){
-    var links = document.querySelectorAll('a');
-    var i;
-    for(i = 0; i < links.length; i++){
-      links[i].style.color=color;
-    }
+    // var links = document.querySelectorAll('a');
+    // var i;
+    // for(i = 0; i < links.length; i++){
+    //   links[i].style.color=color;
+    // }
+    $('a').css('color', color);
   }
 }
 function dayNightHandler(self){
